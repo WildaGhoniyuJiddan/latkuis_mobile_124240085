@@ -56,8 +56,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 spacing: 10,
                 children: [
     
-                    FlutterLogo(
-                      size: 100,
+                    Image.asset(
+                      'lib/assets/logo.png',
+                      width: 100,
+                      height: 100,
+                      fit: BoxFit.contain,
                     ),
                     TextField(
                         controller: _usernameController,
@@ -93,23 +96,6 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
         )
         ),
-        // body: Center(
-        //   child: Text('$name Kamu klik button sebanyak ${_counter}'),
-        // ),
-
-        // floatingActionButton: FloatingActionButton(
-        //   onPressed: (){
-        //     setState(() {
-        //       _counter++;
-        //       name = "Zakinanda";
-
-        //       if(_counter % 2 == 0){
-        //         name = "Alfin";
-        //       }
-        //     });
-        //   },
-        //   child: Icon(Icons.add),
-        // ),
-        );
+      );
   }
 }
