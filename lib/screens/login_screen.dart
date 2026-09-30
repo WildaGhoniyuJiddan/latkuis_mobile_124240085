@@ -58,8 +58,8 @@ class _LoginScreenState extends State<LoginScreen> {
     
                     Image.asset(
                       'lib/assets/logo.png',
-                      width: 100,
-                      height: 100,
+                      width: 150,
+                      height: 150,
                       fit: BoxFit.contain,
                     ),
                     TextField(
